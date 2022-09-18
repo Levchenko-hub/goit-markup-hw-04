@@ -69,8 +69,6 @@ ul {
 
 .header-list {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding-left: 93px;
   margin: 0px;
 }
