@@ -78,7 +78,7 @@ ul {
   align-items: center;
 }
 
-.header .list-icon > :not(:last-child){
+.header .item > :not(:last-child){
   margin-right: 10px;
 }
   
