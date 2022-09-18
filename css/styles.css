@@ -77,6 +77,10 @@ ul {
   display: flex;
   align-items: center;
 }
+
+.header .list-icon > :not(:last-child){
+  margin-right: 10px;
+}
   
 
 /* відступи між посиланнями */
