@@ -381,6 +381,8 @@ ul {
 .main .section.clients .section-title {
   margin-top: 0;
   margin-bottom: 50px;
+  color: var(--title-text-clr);
+  text-align: center;
 }
 
 
