@@ -69,8 +69,7 @@ ul {
 
 .header-list {
   display: flex;
-  padding-left: 93px;
-  margin: 0px;
+  
 }
 
 .header .item {
@@ -78,9 +77,6 @@ ul {
   align-items: center;
 }
 
-.header .item > :not(:last-child){
-  margin-right: 10px;
-}
   
 
 /* відступи між посиланнями */
@@ -305,6 +301,38 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.social-net-list {
+  display: flex;
+  width: 206px;
+  margin: 16px auto 0;
+  justify-content: space-between;
+}
+
+.social-net-list .link {
+  display: block;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+
+  color: var(--icon-main-clr);
+
+  border-radius: 50%;
+}
+
+.social-net-list .link:hover,
+.social-net-list .link:focus {
+  color: var(--sec-text-clr);
+
+  background-color: var(--primary-accent-clr);
+
+  cursor: pointer;
+  outline: none;
+}
+
+.social-net-list .icon {
+  fill: currentColor;
 }
 
 .team-list {
