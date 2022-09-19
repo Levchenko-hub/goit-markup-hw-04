@@ -366,10 +366,10 @@ ul {
 }
 
 /* Main Clients */
-.main .section.clients {
+.section.clients {
   padding: 94px 0;
 }
-.main .list.clients-list {
+.list.clients-list {
   display: flex;
   justify-content: space-between;
 }
@@ -378,38 +378,42 @@ ul {
   fill: var(--primary-text-clr);
 }
 
-.main .section.clients .item {
+.section.clients .link {
   color: var(--primary-accent-clr);
 
   border: 1px solid var(--primary-text-clr);
   border-radius: 4px;
 }
-.main .section.clients .item:hover {
+.section.clients .link:hover,
+.section.clients .link:focus {
   color: var(--primary-accent-clr);
 
   border-color: var(--primary-accent-clr);
 }
-.main .section.clients .link {
+.section.clients .link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 170px;
   height: 92px;
 }
-.main .section.clients .link:focus {
+
+.section.clients .client:hover,
+.section.clients .client:focus {
   color: var(--primary-accent-clr);
   outline: 1px solid var(--primary-accent-clr);
 }
 
-.main .clients-list .icon {
+.clients-list .icon {
   fill: var(--primary-text-clr);
 }
 
-.clients-list .link:hover .icon {
+.clients-list .link:hover .icon,
+.clients-list .link:focus .icon {
   fill: var(--primary-accent-clr);
 }
 
-.main .section.clients .section-title {
+.section.clients .section-title {
   margin-top: 0;
   margin-bottom: 50px;
   color: var(--title-text-clr);
@@ -571,7 +575,8 @@ ul {
   min-width: 73px;
 }
 
-.button.secondary:hover {
+.button.secondary:hover,
+.button.secondary:focus {
   color: var(--sec-text-clr);
   background-color: var(--primary-accent-clr);
 }
