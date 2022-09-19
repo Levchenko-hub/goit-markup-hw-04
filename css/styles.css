@@ -102,6 +102,7 @@ ul {
 
 /* shapka style link*/
 .header-link {
+  position: relative;
   font-weight: var(--prime-fnt-weight);
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -116,7 +117,8 @@ ul {
   color: var(--primary-accent-clr);
 }
 
-.link-info:hover {
+.link-info:hover,
+.link-info:focus {
   color: var(--primary-accent-clr);
 }
 
@@ -124,10 +126,6 @@ ul {
 .header-link-current {
   color: var(--primary-accent-clr);
   text-decoration: none;
-}
-
-.current {
-  position: relative;
 }
 
 .current {
@@ -151,16 +149,14 @@ ul {
   text-decoration: none;
 }
 
-.link-info:hover {
-  color: var(--primary-accent-clr);
-}
-
 .link-info .icon {
   margin-right: 10px;
+  fill: var(--primary-text-clr);
 }
 
-.link-info .icon:hover {
-  color: var(--primary-accent-clr);
+.link-info:hover .icon,
+.link-info:focus .icon {
+  fill: var(--primary-accent-clr);
 }
 
 /* hero */
@@ -377,10 +373,15 @@ ul {
   display: flex;
   justify-content: space-between;
 }
-.main .section.clients .item {
-  color: var(--icon-main-clr);
 
-  border: 1px solid var(--icon-main-clr);
+.clients .icon {
+  fill: var(--primary-text-clr);
+}
+
+.main .section.clients .item {
+  color: var(--primary-accent-clr);
+
+  border: 1px solid var(--primary-text-clr);
   border-radius: 4px;
 }
 .main .section.clients .item:hover {
@@ -401,10 +402,11 @@ ul {
 }
 
 .main .clients-list .icon {
-  fill: currentColor;
+  fill: var(--primary-text-clr);
 }
 
-.main .clients-list .icon:hover {
+.clients-list .link:hover .icon {
+  fill: var(--primary-accent-clr);
 }
 
 .main .section.clients .section-title {
@@ -440,6 +442,15 @@ ul {
 }
 
 /* Footer Contacts */
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.social-wrapper {
+  margin-left: 70px;
+}
+
 .footer .contact {
   line-height: 1.71;
   color: var(--primary-text-clr);
